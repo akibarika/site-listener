@@ -5,16 +5,17 @@ import styled from 'styled-components'
 
 const StyledtTd = styled.td`
   padding: 20px;
+  font-size: 1.3rem;
 `
 
 const StyleStatusSuccess = styled.span`
-  color: green;
+  color: #227D51;
 `
 const StyleStatusFailure = styled.span`
-  color: red;
+    color: #CB1B45;
 `
 const StyleStatusPending = styled.span`
-  color: gray;
+  color: #828282;
 `
 
 class TableRow extends Component {

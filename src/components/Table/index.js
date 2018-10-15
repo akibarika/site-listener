@@ -5,11 +5,13 @@ import styled from 'styled-components'
 
 const StyledContainer = styled.div`
   margin-top: 70px;
-  color: #282c34;
+  margin-bottom: 50px;
+  color: #3c3b3b;
 `
 const StyledtTd = styled.td`
   padding: 20px;
   font-weight: bold;
+  font-size: 1.3rem;
 `
 
 class Table extends Component {

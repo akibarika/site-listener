@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import Table from './components/Table'
 import { siteList } from './constants'
+import Footer from './components/Footer'
 import './App.css';
 
 class App extends Component {
@@ -12,6 +13,7 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
             <Table siteList={siteList}/>
         </header>
+      <Footer/>
       </div>
     );
   }
