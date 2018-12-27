@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types'
-import axios from 'axios';
 import TableRowLink from '../../components/TableRow/link'
 import * as Styled from '../Styled'
 
@@ -28,8 +27,7 @@ class TableRow extends Component {
 };
 
 TableRow.propTypes = {
-    sites: PropTypes.array,
-    status: PropTypes.string
+    sites: PropTypes.array
 };
 
 export default TableRow;

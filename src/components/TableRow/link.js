@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import PropTypes from 'prop-types'
 import axios from 'axios';
 import * as Styled from '../Styled'
+import TableRow from "./index";
 
 
 class TableRowLink extends Component {
@@ -20,6 +21,7 @@ class TableRowLink extends Component {
                 this.setState({status: `failure`});
             })
     }
+
     render() {
         const {status} = this.state;
         let StyleStatus;
@@ -45,4 +47,8 @@ class TableRowLink extends Component {
         )
     }
 }
+
+TableRow.propTypes = {
+    status: PropTypes.string
+};
 export default TableRowLink;
