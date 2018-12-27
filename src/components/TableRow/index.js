@@ -6,22 +6,6 @@ import * as Styled from '../Styled'
 
 
 class TableRow extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {status: ``};
-    }
-
-    componentDidMount() {
-        this.setState({status: `pending`});
-        axios.get(this.props.obj.URL)
-            .then(response => {
-                this.setState({status: `success`});
-            })
-            .catch(error => {
-                this.setState({status: `failure`});
-            })
-    }
-
     render() {
         return (
             <div>
