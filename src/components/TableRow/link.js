@@ -48,7 +48,7 @@ class TableRowLink extends Component {
     }
 }
 
-TableRow.propTypes = {
+TableRowLink.propTypes = {
     status: PropTypes.string
 };
 export default TableRowLink;
